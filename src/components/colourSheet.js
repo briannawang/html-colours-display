@@ -76,22 +76,22 @@ class ColourSheet extends React.Component {
 
 const COLOURS = [
     [
-        {name: "IndianRed", hex: "#CD5C5C", rgb: "RGB(205,92,92)", families: ["red","brown"]},
-        {name: "LightCoral", hex: "#F08080", rgb: "RGB(240,128,128)", families: ["red","pink","coral","light"]},
+        {name: "LightSalmon", hex: "#FFA07A", rgb: "RGB(255,160,122)", families: ["red","pink","orange","salmon","light"]},
         {name: "Salmon", hex: "#FA8072", rgb: "RGB(250,128,114)", families: ["red","pink","orange","salmon"]},
         {name: "DarkSalmon", hex: "#E9967A", rgb: "RGB(233,150,122)", families: ["red","pink","orange","salmon","dark"]},
-        {name: "LightSalmon", hex: "#FFA07A", rgb: "RGB(255,160,122)", families: ["red","pink","orange","salmon","light"]},
+        {name: "LightCoral", hex: "#F08080", rgb: "RGB(240,128,128)", families: ["red","pink","coral","light"]},
+        {name: "IndianRed", hex: "#CD5C5C", rgb: "RGB(205,92,92)", families: ["red","brown"]},
         {name: "Crimson", hex: "#DC143C", rgb: "RGB(220,20,60)", families: ["red"]},
         {name: "Red", hex: "#FF0000", rgb: "RGB(255,0,0)", families: ["red"]},
         {name: "FireBrick", hex: "#B22222", rgb: "RGB(178,34,34)", families: ["red","dark"]},
         {name: "DarkRed", hex: "#8B0000", rgb: "RGB(139,0,0)", families: ["red","dark"]}
     ],
     [
+        {name: "Orange", hex: "#FFA500", rgb: "RGB(255,165,0)", families: ["orange"]},
+        {name: "DarkOrange", hex: "#FF8C00", rgb: "RGB(255,140,0)", families: ["orange","dark"]},
         {name: "Coral", hex: "#FF7F50", rgb: "RGB(255,127,80)", families: ["orange","coral"]},
         {name: "Tomato", hex: "#FF6347", rgb: "RGB(255,99,71", families: ["orange","red"]},
-        {name: "OrangeRed", hex: "#FF4500", rgb: "RGB(255,69,0)", families: ["orange","red"]},
-        {name: "DarkOrange", hex: "#FF8C00", rgb: "RGB(255,140,0)", families: ["orange","dark"]},
-        {name: "Orange", hex: "#FFA500", rgb: "RGB(255,165,0)", families: ["orange"]}
+        {name: "OrangeRed", hex: "#FF4500", rgb: "RGB(255,69,0)", families: ["orange","red"]}
     ],
     [
         {name: "Gold", hex: "#FFD700", rgb: "RGB(255,215,0)", families: ["yellow"]},
@@ -123,7 +123,6 @@ const COLOURS = [
         {name: "DarkGreen", hex: "#006400", rgb: "RGB(0,100,0)", families: ["green","dark"]},
         {name: "YellowGreen", hex: "#9ACD32", rgb: "RGB(154,205,50)", families: ["green","yellow"]},
         {name: "OliveDrab", hex: "#6B8E23", rgb: "RGB(107,142,35)", families: ["green","olive"]},
-        {name: "Olive", hex: "#6B8E23", rgb: "RGB(128,128,0)", families: ["green","olive"]},
         {name: "DarkOliveGreen", hex: "#556B2F", rgb: "RGB(85,107,47)", families: ["green","olive","dark"]},
         {name: "MediumAquaMarine", hex: "#66CDAA", rgb: "RGB(102,205,170)", families: ["green","blue","aquamarine","medium"]},
         {name: "DarkSeaGreen", hex: "#8FBC8B", rgb: "RGB(143,188,139)", families: ["green","sea","dark"]},
@@ -132,14 +131,16 @@ const COLOURS = [
         {name: "Teal", hex: "#008080", rgb: "RGB(0,128,128)", families: ["green","blue"]}
     ],
     [
-        {name: "Aqua", hex: "#00FFFF", rgb: "RGB(0,255,255)", families: ["blue","aqua"]},
-        {name: "Cyan", hex: "#00FFFF", rgb: "RGB(0,255,255)", families: ["blue","cyan"]},
-        {name: "LightCyan", hex: "#E0FFFF", rgb: "RGB(224,255,255)", families: ["blue","cyan","light"]},
-        {name: "PaleTurquoise", hex: "#AFEEEE", rgb: "RGB(175,238,238)", families: ["blue","turquoise","pale"]},
-        {name: "Aquamarine", hex: "#7FFFD4", rgb: "RGB(127,255,212)", families: ["blue","aquamarine"]},
-        {name: "Turquoise", hex: "#40E0D0", rgb: "RGB(64,224,208)", families: ["blue","turquoise"]},
-        {name: "MediumTurquoise", hex: "#48D1CC", rgb: "RGB(72,209,204)", families: ["blue","turquoise","medium"]},
-        {name: "DarkTurquoise", hex: "#00CED1", rgb: "RGB(0,206,209)", families: ["blue","turquoise","dark"]},
+        {name: "Aqua", hex: "#00FFFF", rgb: "RGB(0,255,255)", families: ["cyan", "blue","aqua"]},
+        {name: "Cyan", hex: "#00FFFF", rgb: "RGB(0,255,255)", families: ["cyan", "blue"]},
+        {name: "LightCyan", hex: "#E0FFFF", rgb: "RGB(224,255,255)", families: ["cyan", "blue","light"]},
+        {name: "PaleTurquoise", hex: "#AFEEEE", rgb: "RGB(175,238,238)", families: ["cyan", "blue","turquoise","pale"]},
+        {name: "Aquamarine", hex: "#7FFFD4", rgb: "RGB(127,255,212)", families: ["cyan", "blue","aquamarine"]},
+        {name: "Turquoise", hex: "#40E0D0", rgb: "RGB(64,224,208)", families: ["cyan", "blue","turquoise"]},
+        {name: "MediumTurquoise", hex: "#48D1CC", rgb: "RGB(72,209,204)", families: ["cyan", "blue","turquoise","medium"]},
+        {name: "DarkTurquoise", hex: "#00CED1", rgb: "RGB(0,206,209)", families: ["cyan", "blue","turquoise","dark"]},
+    ],
+    [
         {name: "CadetBlue", hex: "#5F9EA0", rgb: "RGB(95,158,160)", families: ["blue","gray"]},
         {name: "SteelBlue", hex: "#4682B4", rgb: "RGB(70,130,180)", families: ["blue","steel"]},
         {name: "LightSteelBlue", hex: "#B0C4DE", rgb: "RGB(176,196,222)", families: ["blue","steel","light"]},
@@ -200,6 +201,7 @@ const COLOURS = [
         {name: "DarkGoldenRod", hex: "#B8860B", rgb: "RGB(184,134,11)", families: ["brown","orange","goldenrod","dark"]},
         {name: "Peru", hex: "#CD853F", rgb: "RGB(205,133,63)", families: ["brown","orange"]},
         {name: "Chocolate", hex: "#D2691E", rgb: "RGB(210,105,30)", families: ["brown","orange"]},
+        {name: "Olive", hex: "#6B8E23", rgb: "RGB(128,128,0)", families: ["green","olive"]},
         {name: "SaddleBrown", hex: "#8B4513", rgb: "RGB(139,69,19)", families: ["brown"]},
         {name: "Sienna", hex: "#A0522D", rgb: "RGB(160,82,45)", families: ["brown"]},
         {name: "Brown", hex: "#A52A2A", rgb: "RGB(165,42,42)", families: ["brown","red"]},

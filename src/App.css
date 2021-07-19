@@ -593,5 +593,6 @@ td {
 }
 
 .Black {
-  background-color: Black
+  background-color: Black;
+  color: whitesmoke;
 }
