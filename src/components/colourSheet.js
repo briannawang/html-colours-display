@@ -5,7 +5,7 @@ class ColourBox extends React.Component {
         const colour = this.props.colour;
         
         return(
-            <td className={colour.name}><p>{colour.name}</p>
+            <td className={colour.name}><p className="name">{colour.name}</p>
             <p className="hex">{colour.hex}</p></td>
         )
     }
@@ -66,7 +66,7 @@ class ColourSheet extends React.Component {
         });
 
         return(
-            <div>
+            <div className="page">
                 <h1>HTML Colour Names</h1>
                 {tables}
             </div>
@@ -122,6 +122,7 @@ const COLOURS = [
         {name: "Green", hex: "#008000", rgb: "RGB(0,128,0)", families: ["green"]},
         {name: "DarkGreen", hex: "#006400", rgb: "RGB(0,100,0)", families: ["green","dark"]},
         {name: "YellowGreen", hex: "#9ACD32", rgb: "RGB(154,205,50)", families: ["green","yellow"]},
+        {name: "Olive", hex: "#6B8E23", rgb: "RGB(128,128,0)", families: ["green","olive"]},
         {name: "OliveDrab", hex: "#6B8E23", rgb: "RGB(107,142,35)", families: ["green","olive"]},
         {name: "DarkOliveGreen", hex: "#556B2F", rgb: "RGB(85,107,47)", families: ["green","olive","dark"]},
         {name: "MediumAquaMarine", hex: "#66CDAA", rgb: "RGB(102,205,170)", families: ["green","blue","aquamarine","medium"]},
@@ -201,7 +202,6 @@ const COLOURS = [
         {name: "DarkGoldenRod", hex: "#B8860B", rgb: "RGB(184,134,11)", families: ["brown","orange","goldenrod","dark"]},
         {name: "Peru", hex: "#CD853F", rgb: "RGB(205,133,63)", families: ["brown","orange"]},
         {name: "Chocolate", hex: "#D2691E", rgb: "RGB(210,105,30)", families: ["brown","orange"]},
-        {name: "Olive", hex: "#6B8E23", rgb: "RGB(128,128,0)", families: ["green","olive"]},
         {name: "SaddleBrown", hex: "#8B4513", rgb: "RGB(139,69,19)", families: ["brown"]},
         {name: "Sienna", hex: "#A0522D", rgb: "RGB(160,82,45)", families: ["brown"]},
         {name: "Brown", hex: "#A52A2A", rgb: "RGB(165,42,42)", families: ["brown","red"]},

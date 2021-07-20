@@ -1,8 +1,21 @@
 body {
-  background-color: whitesmoke;
+  background-color: white;
   font-family: 'Raleway', sans-serif;
-  margin: 20px;
+  margin: 0px;
   padding: 0;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.page {
+  margin: 30px;
 }
 
 h1 {
@@ -10,12 +23,31 @@ h1 {
   font-size: 42px;
   font-weight: 600;
   text-align: left;
+  margin-top: 30px;
+}
+
+h2 {
+  margin-top: 20px;
 }
 
 p {
   margin: 0px auto;
   text-align: center;
 }
+
+/*NAVIGATION BAR*/
+
+nav {
+  height: 40px;
+}
+
+/*HOMEPAGE*/
+
+.welcome {
+  text-align: left;
+}
+
+/*COLOUR SHEET*/
 
 .colourGroup {
   padding: 0px 10px;
@@ -26,11 +58,25 @@ p {
 }
 
 td {
-  border-color: whitesmoke;
+  border: 2px solid white;
   width: 19vw;
   height: 45px;
 }
 
+/*COLOUR FILTER*/
+
+input {
+  border-radius: 0px;
+  border: 2px solid #292b2c;
+  color: black;
+  background-color: #f7f7f7;
+  width: 200px;
+  margin-left: 2px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+/*COLOURS*/
 
 .LightSalmon {
   background-color: LightSalmon
@@ -65,7 +111,8 @@ td {
 }
 
 .DarkRed {
-  background-color: DarkRed
+  background-color: DarkRed;
+  color:whitesmoke;
 }
 
 .Orange {
@@ -181,11 +228,13 @@ td {
 }
 
 .Green {
-  background-color: Green
+  background-color: Green;
+  color:whitesmoke;
 }
 
 .DarkGreen {
-  background-color: DarkGreen
+  background-color: DarkGreen;
+  color:whitesmoke;
 }
 
 .YellowGreen {
@@ -197,7 +246,8 @@ td {
 }
 
 .DarkOliveGreen {
-  background-color: DarkOliveGreen
+  background-color: DarkOliveGreen;
+  color:whitesmoke;
 }
 
 .MediumAquaMarine {
@@ -297,23 +347,28 @@ td {
 }
 
 .Blue {
-  background-color: Blue
+  background-color: Blue;
+  color:whitesmoke;
 }
 
 .MediumBlue {
-  background-color: MediumBlue
+  background-color: MediumBlue;
+  color:whitesmoke;
 }
 
 .DarkBlue {
-  background-color: DarkBlue
+  background-color: DarkBlue;
+  color:whitesmoke;
 }
 
 .Navy {
-  background-color: Navy
+  background-color: Navy;
+  color:whitesmoke;
 }
 
 .MidnightBlue {
-  background-color: MidnightBlue
+  background-color: MidnightBlue;
+  color:whitesmoke;
 }
 
 .Lavender {
@@ -381,15 +436,18 @@ td {
 }
 
 .DarkSlateBlue {
-  background-color: DarkSlateBlue
+  background-color: DarkSlateBlue;
+  color:whitesmoke;
 }
 
 .RebeccaPurple {
-  background-color: RebeccaPurple
+  background-color: RebeccaPurple;
+  color:whitesmoke;
 }
 
 .Indigo {
-  background-color: Indigo
+  background-color: Indigo;
+  color:whitesmoke;
 }
 
 .Pink {
@@ -485,7 +543,8 @@ td {
 }
 
 .Maroon {
-  background-color: Maroon
+  background-color: Maroon;
+  color:whitesmoke;
 }
 
 .White {
@@ -589,10 +648,11 @@ td {
 }
 
 .DarkSlateGray {
-  background-color: DarkSlateGray
+  background-color: DarkSlateGray;
+  color:whitesmoke;
 }
 
 .Black {
   background-color: Black;
-  color: whitesmoke;
+  color:whitesmoke;
 }
