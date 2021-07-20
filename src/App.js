@@ -11,9 +11,9 @@ function App() {
       <Router>
         <Navigation />
         <Switch>
-          <Route path="/" exact component={() => <Home />} />
-          <Route path="/colour-sheet" exact component={() => <ColourSheet />} />
-          <Route path="/colour-filter" exact component={() => <ColourFilter />} />
+          <Route path="/html-colours-display" exact component={() => <Home />} />
+          <Route path="/html-colours-display/colour-sheet" exact component={() => <ColourSheet />} />
+          <Route path="/html-colours-display/colour-filter" exact component={() => <ColourFilter />} />
         </Switch>
       </Router>
     </div>

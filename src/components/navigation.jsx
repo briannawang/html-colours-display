@@ -14,29 +14,29 @@ function Navigation(props) {
             <ul class="navbar-nav ml-auto">
               <li
                 class={`nav-item  ${
-                  props.location.pathname === "/" ? "active" : ""
+                  props.location.pathname === "/html-colours-display/" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/">
+                <Link class="nav-link" to="/html-colours-display">
                   Home
                   <span class="sr-only">(current)</span>
                 </Link>
               </li>
               <li
                 class={`nav-item  ${
-                  props.location.pathname === "/colour-sheet" ? "active" : ""
+                  props.location.pathname === "/html-colours-display/colour-sheet" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/colour-sheet">
+                <Link class="nav-link" to="/html-colours-display/colour-sheet">
                   Colour Sheet
                 </Link>
               </li>
               <li
                 class={`nav-item  ${
-                  props.location.pathname === "/colour-filter" ? "active" : ""
+                  props.location.pathname === "/html-colours-display/colour-filter" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/colour-filter">
+                <Link class="nav-link" to="/html-colours-display/colour-filter">
                   Colour Filter
                 </Link>
               </li>
