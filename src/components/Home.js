@@ -5,7 +5,7 @@ class MainPage extends React.Component {
         return(
             <div className="page">
                 <h1>Welcome!</h1>
-                <h3 className="welcome">This site displays HTML default colours to assist with design.</h3>
+                <h3 className="welcome">This site displays the 140 default HTML colours.</h3>
             </div>
         )
     }
